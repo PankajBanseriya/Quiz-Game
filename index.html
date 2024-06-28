@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="start">
+        <button id="start-btn">Start the Quiz</button>
+    </div>
+    <div class="rules">
+        <h3>Some Rules of this Quiz</h3>
+        <p>1. You will get 5 random general knowledge questions.</p>
+        <p>2. You will have only 15 seconds per each question.</p>
+        <p>3. You can't exit from the Quiz while you're playing.</p>
+        <p>4. If your answer is correct then you will get +3 marks.</p>
+        <p>5. If your answer is wrong then there will be -1 negative marking.</p>
+        <div class="buttons">
+            <button id="exit" onclick="location.reload()">Exit Game</button>
+            <button id="continue">Continue</button>
+        </div>
+    </div>
+    <div id="game">
+        <div id="timer"></div>
+        <div class="container">
+            <div id="quiz"></div>
+            <div id="result" class="result"></div>
+            <button id="submit">Submit</button>
+            <div class="btn">
+                <button id="retry" class="button hide" onclick="location.reload()">Restart Game</button>
+                <button id="showAnswer" class="button hide">Show Answer</button>
+            </div>
+        </div>
+    </div>
+    <script src="questionList.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
